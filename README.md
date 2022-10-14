@@ -2,7 +2,7 @@
 # Jumper Game
 Jumper is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time.
 
-# Rules of the game:
+## Rules of the game:
 * The puzzle is a secret word randomly chosen from a list.
 * The player guesses a letter in the puzzle.
 * If the guess is correct, the letter is revealed.
@@ -38,7 +38,23 @@ root                    (project root folder)
 * Nefi Perez Martinez
 * Sariah Tanner
 
+```
+Director (Ron)
+•	Start_game – Start the game by running a loop
+•	Get_inputs – Prompt user to guess a letter from A to Z 
+•	Do_updates – compare the letters from the random words  to user input
+•	Do_outputs – Add letter to the secret word or remove a part from a parachute
 
-From Sariah:
-So our game specification says we need four classes.  I was thinking we could have one for the player, one for the puzzle(including the parachute status), one for randomly selecting from the list of words and one for guessing the letter(and adding to the dashes of the mystery word if it's correct)  
+Secret_word (Rob)
+•	_init__ = Make a list of randoms words
+•	Get_hint = display message to inform the guesser
+•	Letter_found = Whether or not the guesser found the letter
 
+Guesser (Nefi)
+•	_unit_ = choose a new secret word from the list
+•	Read_input = convert all text to lowercase
+
+Display (Sariah)
+•	Num_characters = Display the number of characters
+•	Make_Parachute = Display the parachute 
+```
