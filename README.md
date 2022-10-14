@@ -33,10 +33,10 @@ root                    (project root folder)
 
 
 ## Authors
-Ron Ron Cabanjin
-Robin Dickson
-Nefi Perez Martinez
-Sariah Tanner
+* Ron Ron Cabanjin
+* Robin Dickson
+* Nefi Perez Martinez
+* Sariah Tanner
 
 
 From Sariah:
