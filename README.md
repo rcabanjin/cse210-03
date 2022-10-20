@@ -40,10 +40,11 @@ root                    (project root folder)
 
 ```
 Director (Ron)
-•	Start_game – Start the game by running a loop
-•	Get_inputs – Prompt user to guess a letter from A to Z 
-•	Do_updates – compare the letters from the random words  to user input
-•	Do_outputs – Add letter to the secret word or remove a part from a parachute
+•	Starts the game by running by calling the main class
+•	Starts the game by running the main game loop
+•	call the classes created for getting the guesser's input letter    
+•	call the classes created to monitor the guested letters
+•	call the classes created for showing the guesser input letters and remaining characters
 
 Secret_word (Rob)
 •	_init__ = Make a list of randoms words
