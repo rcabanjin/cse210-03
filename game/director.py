@@ -11,7 +11,7 @@ class Director:
     def __init__(self):
     #construct new Director
 
-    #Starts the game by running the main game loop
+    #Starts the game by running by calling the main class
     
     def start(self):
     #Starts the game by running the main game loop
