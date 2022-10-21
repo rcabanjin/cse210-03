@@ -1,9 +1,8 @@
-#Start with a main function
-def main():
+class Display():
         #Print the display for a 5 letter word
-        print('- - - - -')
-        #Start the display class
-        class Display():
+        def __init__(self):
+            dashboard = ['-' '-' '-' '-' '-']
+            print(dashboard)
             #Create a board for the parachute and the man
             board = {
                     1: '', 
@@ -31,7 +30,3 @@ def main():
             parachute_man =[' '] * 15
             display_parachute(parachute_man)
 
-
-#Code a call to main from the beginning of the program
-if __name__ == "__main__":
-    main()
