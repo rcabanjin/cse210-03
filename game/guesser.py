@@ -18,7 +18,8 @@ class guesser:
                 if(character == playerGuess):
                     print(character)
                 else:
-                    print("Try Again!")
+                    
+                    print (character)
         else:
             print("Please enter a letter, not a number")
 
