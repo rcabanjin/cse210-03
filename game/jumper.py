@@ -1,11 +1,7 @@
 class Display():
         #Print the display for a 5 letter word
-        def __init__(self):
-            dashboard = ['-' '-' '-' '-' '-']
-            print(dashboard)
-
             #Create a board for the parachute and the man
-            board = {
+            def __init__(board): {
                     1: '', 
                     2: '', 3: '', 
                     4: '', 
@@ -30,5 +26,12 @@ class Display():
 
             parachute_man =[' '] * 15
             display_parachute(parachute_man)
+            
+           
+            def __init__(self):
+                self._letters = []
 
-print(Display())
+            def get_words(self, dash):
+                self._letters.append(dash)
+            dash = ('-----')
+            print(dash) 
