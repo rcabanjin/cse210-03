@@ -1,7 +1,5 @@
 import random
 
-
-
 class SecretWord:
     """The person choosing the Secret Word that the Player must guess in order to dave the Jumper.
     
@@ -45,13 +43,26 @@ class SecretWord:
         self.word = random.choice(list).lower()
 
 random_word = SecretWord()
-print(random_word.word)
+word = random_word.word
+print(word)
 
 
-"""from secret_word import SecretWord
-
-print(SecretWord)
+#from SecretWord import random_word
 
 class guesser:
-    def __init__(self):
-        pass"""
+    def __init__(self, playerGuess):
+        self.guess = playerGuess
+
+    def checkLetter(self):
+        if not(playerGuess.isdigit()):
+            for character in word:
+                if(character == playerGuess):
+                    print("Correct!")
+                else:
+                    print("Try Again!")
+        else:
+            print("Please enter a letter, not a number")
+
+
+playerGuess = input("Enter a letter guess: ")
+guesser.checkLetter(playerGuess)
