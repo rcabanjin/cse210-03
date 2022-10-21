@@ -1,10 +1,7 @@
-from secret_word import SecretWord
+from secret_word import random_word
 
-random_word = SecretWord()
 word = random_word.word
 print(word)
-
-
 
 class guesser:
     def __init__(self, playerGuess):
