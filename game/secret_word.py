@@ -1,6 +1,6 @@
 import random
 
-class SecretWord:
+class SecretWord():
     """The person choosing the Secret Word that the Player must guess in order to dave the Jumper.
     
     Attriibutes:
@@ -8,9 +8,6 @@ class SecretWord:
     """
 
     def __init__(self):
-        self.word = ""
-
-    def secret_word(self):
 
         list = ["Abuse", "Adult", "Agent", "Anger", "Apple", "Award", "Basis"
         , "Beach", "Birth", "Block", "Blood", "Board", "Brain", "Bread"
@@ -44,11 +41,9 @@ class SecretWord:
         , "Waste", "Watch", "Water", "While", "White", "Whole", "Woman"
         , "World", "Youth"]
 
-        word = random.choice(list).lower()
+        self.word = random.choice(list).lower()
 
-        self.word = word
     
-        return word
-    
+random_word = SecretWord()
 
 
