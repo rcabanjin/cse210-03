@@ -17,9 +17,8 @@ class Director:
         self._is_playing = True
     #Starts the game by running by calling the main class
     
-    def start(self):
+    def start_game(self):
     #Starts the game by running the main game loop
-    
         #create a loop to run the game
         while self._is_playing:
         #call the classes created
@@ -29,7 +28,7 @@ class Director:
 
     #call the classes created for getting the guesser's input letter    
     def _get_inputs(self):
-    #    
+        self._guesser.checkLetter()
         
     #call the classes created to monitor the guested letters
     def _do_update(self):
