@@ -1,3 +1,4 @@
+from tkinter import Variable
 from secret_word import SecretWord
 from jumper import Display
 
@@ -16,11 +17,13 @@ class guesser:
         if not(playerGuess.isdigit()):
             for character in word:
                 if(character == playerGuess):
-                    print(character)
+                    output = "Match"
+                    print(output)
                 else:
-                    print("Try Again!")
+                    output = "Not Match"
+                    print(output)
         else:
             print("Please enter a letter, not a number")
 
 playerGuess = input("Enter a letter guess: ")
-guesser.checkLetter(playerGuess)
+guesser.checkLetter(playerGuess)    
