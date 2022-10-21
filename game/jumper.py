@@ -3,6 +3,7 @@ class Display():
         def __init__(self):
             dashboard = ['-' '-' '-' '-' '-']
             print(dashboard)
+
             #Create a board for the parachute and the man
             board = {
                     1: '', 
@@ -30,3 +31,4 @@ class Display():
             parachute_man =[' '] * 15
             display_parachute(parachute_man)
 
+print(Display())

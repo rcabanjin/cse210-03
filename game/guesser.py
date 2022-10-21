@@ -1,14 +1,14 @@
 from secret_word import SecretWord
 from jumper import Display
 
-"""random_word = SecretWord()
+random_word = SecretWord()
 word = random_word.word
-print(word)"""
+print(word)
 
 p = Display()
 print(p)
 
-"""class guesser:
+class guesser:
     def __init__(self, playerGuess):
         self.guess = playerGuess
 
@@ -23,4 +23,4 @@ print(p)
             print("Please enter a letter, not a number")
 
 playerGuess = input("Enter a letter guess: ")
-guesser.checkLetter(playerGuess)"""
+guesser.checkLetter(playerGuess)
