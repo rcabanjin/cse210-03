@@ -32,8 +32,9 @@ class Director:
 
     #Update the guesser's correct letter    
     def _do_update(self):
-        if result == output s
+        print (guesser.checkLetter(output))
 
 
     #call the classes created for showing the guesser input letters and remaining characters
     def _do_output(self):
+        pass 

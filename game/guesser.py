@@ -20,13 +20,8 @@ class guesser:
                     output = "Match"
                     print(output)
                 else:
-<<<<<<< HEAD
-                    
-                    print (character)
-=======
                     output = "Not Match"
                     print(output)
->>>>>>> 7d316bd6707436c03fcdd747e5c7a664df924876
         else:
             print("Please enter a letter, not a number")
 
