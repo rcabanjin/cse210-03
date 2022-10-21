@@ -11,12 +11,11 @@ class guesser:
         if not(playerGuess.isdigit()):
             for character in word:
                 if(character == playerGuess):
-                    print("Correct!")
+                    print(character)
                 else:
                     print("Try Again!")
         else:
             print("Please enter a letter, not a number")
-
 
 playerGuess = input("Enter a letter guess: ")
 guesser.checkLetter(playerGuess)
