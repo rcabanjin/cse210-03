@@ -44,6 +44,6 @@ class SecretWord():
         self.word = random.choice(list).lower()
 
     
+
+
 random_word = SecretWord()
-
-

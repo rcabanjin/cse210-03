@@ -7,15 +7,20 @@ class guesser:
     def __init__(self, playerGuess):
         self.guess = playerGuess
 
-    def checkLetter(self):
-        if not(playerGuess.isdigit()):
-            for character in word:
-                if(character == playerGuess):
-                    print("Correct!")
-                else:
-                    print("Try Again!")
+
+
+
+    def check_letter(self):
+        """Checks the letter against the word."""
+
+        for i in range(0,len(self.word)):
+            playerGuess = self.word[i]
+            if self.guess == playerGuess:
+                self.reveal[i] = self.guess
+        if '_' not in self.reveal:
+            return True
         else:
-            print("Please enter a letter, not a number")
+            return False
 
 
 playerGuess = input("Enter a letter guess: ")
