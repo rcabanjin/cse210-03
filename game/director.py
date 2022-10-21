@@ -1,6 +1,6 @@
-from game.guesser  import SecretWord
-from game.  import Gamet
-from game.  import Gamet
+from game.guesser  import guesser
+from game.jumper  import Display
+from game.secret_word  import SecretWord
 
 #class that handles the game events
 class Director:
