@@ -28,11 +28,14 @@ class Director:
 
     #call the classes created for getting the guesser's input letter    
     def _get_inputs(self):
-        self._guesser.checkLetter()
-        
-    #call the classes created to monitor the guested letters
+        playmore_game = input ("Want to play more game?")
+        self._is_playing = (playmore_game == "y")
+
+    #Update the guesser's correct letter    
     def _do_update(self):
+
 
 
     #call the classes created for showing the guesser input letters and remaining characters
     def _do_output(self):
+        
