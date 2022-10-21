@@ -1,4 +1,4 @@
-from game.  import Gamet
+from game.guesser  import SecretWord
 from game.  import Gamet
 from game.  import Gamet
 
@@ -9,7 +9,6 @@ class Director:
 #sources / parts if game is:
 
     def __init__(self):
-<<<<<<< HEAD
     #construct new Director
 
     #Starts the game by running by calling the main class
@@ -31,9 +30,6 @@ class Director:
     #call the classes created to monitor the guested letters
     def _do_update(self):
 
-=======
-        pass
->>>>>>> 5ccfaaef3d438aca1f77a90592f1b2d65ac89f62
 
     #call the classes created for showing the guesser input letters and remaining characters
     def _do_output(self):
