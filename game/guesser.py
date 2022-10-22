@@ -1,29 +1,20 @@
-from tkinter import Variable
-from secret_word import SecretWord
-from jumper import Display
 
-random_word = SecretWord()
-word = random_word.word
-print(word)
 
-p = Display()
-print(p)
+class Guesser():
+    """Get text input and display text output.
+    
+    Attributes:
+        prompt (string): The prompt to display on each line.
+    """
+     
+    def read(self, prompt):
 
-class guesser:
-    def __init__(self, playerGuess):
-        self.guess = playerGuess
+        return input(prompt)
 
-    def checkLetter(self):
-        if not(playerGuess.isdigit()):
-            for character in word:
-                if(character == playerGuess):
-                    output = "Match"
-                    print(output)
-                else:
-                    output = "Not Match"
-                    print(output)
-        else:
-            print("Please enter a letter, not a number")
+    def read_letter(self, prompt):
 
-playerGuess = input("Enter a letter guess: ")
-guesser.checkLetter(playerGuess)    
+        return float(input(prompt))
+        
+    def write(self, text):
+
+        print(text)
