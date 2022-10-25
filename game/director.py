@@ -19,26 +19,26 @@ class Director:
 
     def __init__(self):
     #construct new Director
-        self.guesser = Guesser()
-        self.jumper = Jumper()
-        self.word = random_word
-        self.is_playing = True
+        self._guesser = Guesser()
+        self._jumper = Jumper()
+        self._word = random_word
+        self._is_playing = True
     #Starts the game by running by calling the main class
     
     def start_game(self):
     #Starts the game by running the main game loop
         #create a loop to run the game
-        while self.is_playing:
+        while self._is_playing:
         #call the classes created
-            self.get_inputs()
-            self.do_update()
-            self.do_output()
+            self._get_inputs()
+            self._do_update()
+            self._do_output()
   
-    def get_inputs(self):
-        self.word
+    def _get_inputs(self):
+        self._word
         
-    def do_update(self):
-        self.jumper.process()
+    def _do_update(self):
+        self._jumper.process()
 
-    def do_output(self):
+    def _do_output(self):
         pass

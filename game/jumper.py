@@ -1,3 +1,4 @@
+from tkinter import SE
 from game.secretword import random_word
 from game.parachute import chute
 
@@ -17,20 +18,20 @@ class Jumper():
     """
 
     def __init__(self):
-        self.word = random_word
-        self.guess = ""
-        self.reveal = list(len(self.word)*'_')
-        self.lives = 4
-        self.won = False
-        self.lose = False
+        self._word = random_word
+        self._guess = ""
+        self._reveal = list(len(self._word)*'_')
+        self._lives = 4
+        self._won = False
+        self._lose = False
 
-    def check_letter(self, letter, word):
+    def _check_letter(self, letter, _word):
 
-        for i in range(0,len(self.word)):
-            letter = self.word[i]
-            if self.guess == letter:
-                self.reveal[i] = self.guess
-        if '_' not in self.reveal:
+        for i in range(0,len(self._word)):
+            letter = self._word[i]
+            if self._guess == letter:
+                self._reveal[i] = self._guess
+        if '_' not in self._reveal:
             return True
         else:
             return False
@@ -38,31 +39,31 @@ class Jumper():
     def show(self):
         """show prints out a picture of the Chute"""
         
-        print(chute[4 - self.lives])
-        print(self.reveal)
+        print(chute[4 - self._lives])
+        print(self._reveal)
 
 
     def process(self):
         """This is the logic while trying to get the guessing game to work
         It checks the letter"""
-        while self.won == False and self.lives > 0:
+        while self._won == False and self._lives > 0:
             self.show()
-            self.guess = input('Please guess a letter: ')
-            self.guess = self.guess.upper()
+            self._guess = input('Please guess a letter: ')
+            self._guess = self._guess.upper()
           
-            if self.guess == self.word:
-                self.won = True
-                self.reaveal = self.word
+            if self._guess == self._word:
+                self._won = True
+                self._reaveal = self._word
 
-            if len(self.guess) == 1 and self.guess in self.word:
-                self.won = self.check_letter(self.guess, self.word)  
+            if len(self._guess) == 1 and self._guess in self._word:
+                self._won = self._check_letter(self._guess, self._word)  
 
             else:
-                self.lives-=1
+                self._lives-=1
 
             #Print a winning message!
-            if self.won == True: 
-                print(f"Nice! you guessed {self.word}")
+            if self._won == True: 
+                print(f"Nice! you guessed {self._word}")
                 print("")
 
             else:
@@ -70,14 +71,14 @@ class Jumper():
                 print(" ")
 
             #Print a losing message :(
-            if self.lives == 0:
-                self.lose = True
-            if self.lose == True:
+            if self._lives == 0:
+                self._lose = True
+            if self._lose == True:
                 print(chute[4])
                 print("I am sorry, you've lost!")
                 print("You have failed to save the jumper!")
-                print(f"The word was, {self.word}")
-                self.lost = False
+                print(f"The word was, {self._word}")
+                self._lost = False
                 print("""
              ___   ___                   ___   
             |   | |   |                 |   |   
